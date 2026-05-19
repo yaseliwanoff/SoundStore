@@ -1,0 +1,39 @@
+@use "../mixins/disable-mob-hover" as *;
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+    }
+
+    @include hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-accent-active);
+    }
+  }
+}
