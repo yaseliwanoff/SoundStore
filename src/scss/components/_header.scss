@@ -1,1 +1,73 @@
-// ваш код
+@use "../mixins/disable-mob-hover" as *;
+
+.header {
+  &__top {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-neutral-muted);
+  }
+
+  &__bottom {
+    border-bottom: 1px solid var(--color-neutral-muted);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 32px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 32px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+    }
+
+    @include hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-accent-active);
+    }
+  }
+
+  &__fav,
+  &__cart {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__enter {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  &__catalog {
+    margin-left: calc(-1 * var(--gap));
+  }
+
+  &__phone {
+    margin-left: auto;
+    color: var(--color-primary);
+  }
+}
