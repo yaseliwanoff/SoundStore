@@ -1,0 +1,30 @@
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  border-right: 1px solid var(--color-neutral-muted);
+  padding: 20px 24px;
+  width: 237px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  gap: 12px;
+
+  &__icon {
+    display: block;
+    width: 16px;
+    height: 10px;
+    stroke: currentColor;
+    object-fit: cover;
+  }
+
+  &__angle {
+    display: block;
+    margin-left: auto;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    object-fit: cover;
+  }
+}
