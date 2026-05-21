@@ -12,21 +12,105 @@
   font-size: 16px;
   line-height: 122%;
   text-transform: uppercase;
+  transition: all 0.2s ease;
 
   &--primary {
     border-color: var(--color-accent);
     color: var(--color-surface-default);
     background-color: var(--color-accent);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+    }
+
+    @include hover {
+      background-color: var(--color-surface-default);
+      color: var(--color-primary);
+    }
+
+    &:active {
+      border-color: var(--color-accent);
+      color: var(--color-primary);
+      background-color: var(--color-surface-default);
+    }
   }
 
-  &:focus {
-    outline: none;
+  &--secondary {
+    border-color: var(--color-surface-default);
+    color: var(--color-accent);
+    background-color: var(--color-surface-default);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+    }
+
+    @include hover {
+      background-color: var(--color-accent);
+      color: var(--color-surface-default);
+    }
+
+    &:active {
+      border-color: var(--color-accent);
+      color: var(--color-primary);
+      background-color: var(--color-surface-default);
+    }
   }
 
-  &:focus-visible {
-    outline: 2px solid var(--color-accent);
+  &--tretiary {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background-color: var(--color-surface-default);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+    }
+
+    @include hover {
+      background-color: var(--color-accent);
+      color: var(--color-surface-default);
+    }
+
+    &:active {
+      border-color: var(--color-accent);
+      color: var(--color-primary);
+      background-color: var(--color-surface-default);
+    }
   }
 
-  @include hover {
+  &--quinary {
+    border-color: transparent;
+    color: var(--color-accent);
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+    }
+
+    @include hover {
+      background-color: var(--color-accent);
+      color: var(--color-surface-default);
+    }
+
+    &:active {
+      border-color: var(--color-accent);
+      color: var(--color-primary);
+      background-color: var(--color-surface-default);
+    }
   }
 }
