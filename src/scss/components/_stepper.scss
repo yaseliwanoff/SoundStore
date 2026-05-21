@@ -1,0 +1,33 @@
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  gap: 12px;
+  background-color: var(--color-neutral-muted);
+
+  &__minus,
+  &__plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+  }
+
+  &__input {
+    width: 20px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--color-primary);
+    background-color: transparent;
+  }
+
+  &__disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+}
