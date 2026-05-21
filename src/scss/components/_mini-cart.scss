@@ -26,8 +26,8 @@
 
   &__quantity {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -12px;
+    top: -2px;
     font-weight: 600;
     font-size: 12px;
     line-height: 122%;
@@ -43,5 +43,39 @@
     svg {
       fill: currentColor;
     }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    height: 100%;
+    gap: 4px;
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 12px;
+  }
+
+  &__bottom {
+    margin-top: auto;
+  }
+
+  &__result {
+    display: flex;
+    align-items: center;
+    padding: var(--gap);
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 122%;
+    text-transform: uppercase;
+    color: var(--color-primary);
   }
 }
