@@ -1,13 +1,14 @@
-@use "vars";
-@use "mixins";
-@use "fonts";
-@use "settings";
+@use 'vars';
+@use 'mixins';
+@use 'fonts';
+@use 'settings';
 
-@use "./components/header";
-@use "./components/nav";
-@use "./components/header-btn";
-@use "./components/header-search";
-@use "./components/btn";
-@use "./components/mini-cart";
-@use "./components/mini-cart-product";
-@use "./components/stepper";
+@use './components/header';
+@use './components/nav';
+@use './components/header-btn';
+@use './components/header-search';
+@use './components/btn';
+@use './components/mini-cart';
+@use './components/mini-cart-product';
+@use './components/stepper';
+@use './components/search-result';
