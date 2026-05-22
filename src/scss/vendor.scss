@@ -1,4 +1,4 @@
-@use "./vendor/normalize";
+@use './vendor/normalize';
 
 // стили для модального окна
 // @use "../../node_modules/graph-modal/dist/graph-modal.min";
@@ -13,4 +13,4 @@
 // @use "../../node_modules/swiper/swiper-bundle.min";
 
 // стили для скролла simplebar
-// @use "../../node_modules/simplebar/dist/simplebar.min";
+@use '../../node_modules/simplebar/dist/simplebar.min';
