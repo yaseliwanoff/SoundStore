@@ -42,7 +42,9 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .is-hidden {
@@ -110,4 +112,39 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.simplebar-track.simplebar-vertical {
+  right: 4px;
+  border-radius: 10px;
+  width: 4px;
+  background: var(--color-neutral-muted);
+}
+
+.simplebar-scrollbar::before {
+  inset: 0 !important;
+  opacity: 1 !important;
+  background: var(--color-secondary);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgb(26, 26, 26, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 0.3s linear,
+    visibility 0.3s linear;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.simplebar-content::after,
+.simplebar-content::before {
+  display: none;
 }
